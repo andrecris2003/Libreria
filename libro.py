@@ -14,7 +14,7 @@ def ImportaLibro():
     return libro
 """
 def AggiungiLibro(Libreria):
-    libro=input("Inserisci il nome del libro che vuoi aggiungere alla libreria\n").lower()
+    libro=input("Inserisci il nome del libro che vuoi aggiungere alla libreria\n").strip().lower()
     if libro in Libreria:
         print("Libro gia esistente")
     else:
