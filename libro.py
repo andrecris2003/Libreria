@@ -13,9 +13,9 @@ def ImportaLibro():
            "finePrestito":{"giorno","mese","anno"}}
     return libro
 """
-def AggiungiLibro(Libreria):
+def AggiungiLibro(Libreria,Prestiti):
     libro=input("Inserisci il nome del libro che vuoi aggiungere alla libreria\n").strip().lower()
-    if libro in Libreria:
+    if (libro in Libreria) or (libro in Prestiti):
         print("Libro gia esistente")
     else:
         Libreria.append(libro)

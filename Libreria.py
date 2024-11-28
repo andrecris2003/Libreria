@@ -16,7 +16,7 @@ while not exitFlag:
         exitFlag=True
         break
     elif s==1 or s=="aggiungi":
-        AggiungiLibro(Libreria)
+        AggiungiLibro(Libreria,Prestiti)
     elif s==2 or s=="prestito":
         PrestitoLibro(Libreria,Prestiti)
     elif s==3 or s=="riporta":
