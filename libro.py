@@ -19,6 +19,7 @@ def AggiungiLibro(Libreria,Prestiti):
         print("Libro gia esistente")
     else:
         Libreria.append(libro)
+        print("Libro aggiunto alla Libreria")
 
 def isEmpty(Libreria):
     if len(Libreria)<=0:
